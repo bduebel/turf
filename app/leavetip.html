@@ -35,11 +35,13 @@
 
         <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
         <div class="content">
-          <div class="content">
-            <form class="input-group">
-              <textarea rows="5" autofocus placeholder="What's good here?" ></textarea>
-            </form>
-          </div>
+          <form class="input-group">
+            <textarea rows="5" autofocus placeholder="What's good here?" class="leavetip"></textarea>
+            <div class="content-padded">
+              <p class="input-helper">People talk about 7ft tables, soft-tip, beer</p>
+              <input type="file" accept="image/*" name="pic" class="btn btn-block btn-imageupload" />
+            </div>
+          </form>
         <!-- End .content -->
         </div>
 
@@ -61,5 +63,6 @@
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
+        <script src="bower_components/ratchet/dist/js/ratchet.min.js"></script>
 </body>
 </html>
