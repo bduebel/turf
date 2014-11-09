@@ -28,8 +28,8 @@
 
         <!-- Make sure all your bars are the first things in your <body> -->
         <header class="bar bar-nav">
-          <a class="icon icon-person pull-left"></a>
-          <a class="icon icon-compose pull-right"></a>
+          <a href="#profile" class="icon icon-person pull-left"></a>
+          <a href="#tip" class="icon icon-compose pull-right"></a>
           <h1 class="title">Turf</h1>
         </header>
 
@@ -38,7 +38,7 @@
           <div class="content-padded">
             <a href="#search" class="btn btn-block btn-link">Within 1.9 miles of you <span class="icon icon-down"></span></a>
             <form>
-              <input type="search" placeholder="Find your place to play by name or game">
+              <input class="text-center" type="search" name="search" placeholder="Find your game">
             </form>
           </div>
           <div class="slider slider-unpadded" id="mySlider">
@@ -199,27 +199,52 @@
         </nav>
 
         <!-- Set Location Modal -->
-          <div id="search" class="modal">
-            <header class="bar bar-nav">
-              <a class="icon icon-close pull-right" href="#search"></a>
-              <h1 class="title">Pick a Location</h1>
-            </header>
+        <div id="search" class="modal">
+          <header class="bar bar-nav">
+            <a class="icon icon-close pull-right" href="#search"></a>
+            <h1 class="title">Pick a Location</h1>
+          </header>
 
-            <div class="content">
-              <ul class="table-view">
-                <li class="table-view-cell table-view-map">
-                  <div class="google-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d199580.71486446034!2d-90.27665387427423!3d38.59254220377317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spool+tables+near+me!5e0!3m2!1sen!2sus!4v1415487652176" width="300" height="346" frameborder="0" style="border:0"></iframe>
-                  </div>
-                </li>
-                <li class="table-view-cell table-view-form">
-                  <form>
-                    <input type="search" placeholder="Search for a location">
-                  </form>
-                </li>
-              </ul>
-              <a href="#search" class="btn btn-block btn-link"><i class="fa fa-location-arrow"></i> Use my current location</a>
-            </div>
+          <div class="content">
+            <ul class="table-view">
+              <li class="table-view-cell table-view-map">
+                <div class="google-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d199580.71486446034!2d-90.27665387427423!3d38.59254220377317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spool+tables+near+me!5e0!3m2!1sen!2sus!4v1415487652176" width="300" height="346" frameborder="0" style="border:0"></iframe>
+                </div>
+              </li>
+              <li class="table-view-cell table-view-form">
+                <form>
+                  <input class="text-center" type="search" placeholder="Search for a location">
+                </form>
+              </li>
+            </ul>
+            <a href="#search" class="btn btn-block btn-link"><i class="fa fa-location-arrow"></i> Use my current location</a>
+          </div>
+        </div>
+
+        <!-- Leave Tip Modal -->
+        <div id="tip" class="modal">
+          <header class="bar bar-nav">
+            <a class="icon icon-close pull-right" href="#tip"></a>
+            <h1 class="title">Leave a Tip</h1>
+          </header>
+
+          <div class="content">
+            
+          </div>
+        </div>
+
+        <!-- Profile Modal -->
+        <div id="profile" class="modal">
+          <header class="bar bar-nav">
+            <a class="icon icon-close pull-right" href="#profile"></a>
+            <h1 class="title">Profile</h1>
+          </header>
+
+          <div class="content">
+            
+          </div>
+        </div>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
