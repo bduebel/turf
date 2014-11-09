@@ -1,13 +1,14 @@
 {
   "name": "turf",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "repository": "https://github.com/eversoclever/turf",
+  "description": "An app to help bar gamers find and defend their turf",
   "dependencies": {},
   "devDependencies": {
     "connect": "^2.14.4",
     "connect-livereload": "^0.4.0",
     "gulp": "^3.6.0",
     "gulp-autoprefixer": "^0.0.7",
-    "gulp-bower-files": "^0.2.1",
     "gulp-cache": "^0.1.1",
     "gulp-clean": "^0.2.4",
     "gulp-csso": "^0.2.6",
@@ -23,7 +24,7 @@
     "gulp-useref": "^0.4.2",
     "jshint-stylish": "^0.2.0",
     "opn": "^0.1.1",
-    "streamqueue": "0.0.7",
+    "main-bower-files": "^1.0.1",
     "wiredep": "^1.4.3"
   },
   "engines": {
