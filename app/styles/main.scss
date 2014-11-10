@@ -52,6 +52,9 @@ header {
   }
 }
 .table-view {
+  &.no-margin {
+    margin-top: -1px !important;
+  }
   .table-view-cell {
     padding-right: 45px;
     > a {
@@ -139,5 +142,77 @@ header {
     border-radius: 4px;
     color: #ddd;
     padding: 25% 0;
+  }
+}
+
+
+.rating {
+  float:left;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  legend {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+  &:not(:checked) {
+    > input {
+      position:absolute;
+      top:-9999px;
+      clip:rect(0,0,0,0);
+    }
+    > label {
+      float:right;
+      width: 32px;
+      padding: 0;
+      margin: 0 10px 0 0;
+      overflow:hidden;
+      white-space:nowrap;
+      cursor:pointer;
+      font-size: 32px;
+      line-height:42px;
+      color:#ddd;
+      &:before {
+        content: "\e81b";
+        font-family: Ratchicons;
+      }
+      &:hover, &:hover ~ label {
+        color: gold;
+      }
+    }
+  }
+  > label {
+    &:active {
+      position:relative;
+      top:2px;
+      left:2px;
+    }
+    &:hover {
+      ~ input {
+        &:checked {
+          ~label {
+            color: #ea0;
+          }
+        }
+      }
+    }
+  }
+  > input {
+    &:checked {
+      ~ label {
+        color: #f70;
+        &:hover {
+          color: #ea0;
+        }
+      }
+      + label {
+        &:hover {
+          color: #ea0;
+        }
+      }
+    }
   }
 }

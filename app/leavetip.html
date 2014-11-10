@@ -36,9 +36,28 @@
         <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
         <div class="content">
           <form class="input-group">
-            <textarea rows="5" autofocus placeholder="What's good here?" class="leavetip"></textarea>
+            <textarea rows="3" autofocus placeholder="What's good here?" class="leavetip"></textarea>
             <div class="content-padded">
               <p class="input-helper">People talk about 7ft tables, soft-tip, beer</p>
+            </div>
+            <ul class="table-view">
+              <li class="table-view-cell">
+                <a href="rating-pool.html" class="navigate-right" data-transition="slide-in">
+                  Rate the billiards here
+                </a>
+              </li>
+              <li class="table-view-cell">
+                <a href="rating-darts.html" class="navigate-right" data-transition="slide-in" data-transition="slide-in">
+                  Rate the darts here
+                </a>
+              </li>
+              <li class="table-view-cell">
+                <a href="rating-foos.html" class="navigate-right" data-transition="slide-in">
+                  Rate the foosball here
+                </a>
+              </li>
+            </ul>
+            <div class="content-padded">
               <input type="file" accept="image/*" name="pic" class="btn btn-block btn-imageupload" />
             </div>
           </form>
