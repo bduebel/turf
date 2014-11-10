@@ -28,41 +28,37 @@
 
         <!-- Make sure all your bars are the first things in your <body> -->
         <header class="bar bar-nav">
-          <a href="index.html#tip" class="icon icon-left-nav pull-left" data-transition="slide-out"></a>
-          <a href="index.html#tip" class="btn btn-link pull-right" data-transition="slide-in">Post</a>
+          <a href="index.html#challenge" class="icon icon-left-nav pull-left" data-transition="slide-out"></a>
+          <a href="turf.html" class="btn btn-link pull-right" data-transition="slide-in">Post</a>
           <h1 class="title">Friendly's Sports Bar &amp; Grill</h1>
         </header>
 
         <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
         <div class="content">
           <form class="input-group">
-            <textarea rows="3" autofocus placeholder="What's good here?" class="leavetip"></textarea>
-            <div class="content-padded">
-              <p class="input-helper">People talk about 7ft tables, soft-tip, beer</p>
-            </div>
-            <ul class="table-view">
-              <li class="table-view-cell">
-                <a href="rating-pool.html" class="navigate-right" data-transition="slide-in">
-                  Rate the billiards here
-                </a>
-              </li>
-              <li class="table-view-cell">
-                <a href="rating-darts.html" class="navigate-right" data-transition="slide-in" data-transition="slide-in">
-                  Rate the darts here
-                </a>
-              </li>
-              <li class="table-view-cell">
-                <a href="rating-foos.html" class="navigate-right" data-transition="slide-in">
-                  Rate the foosball here
-                </a>
-              </li>
-            </ul>
+            <textarea rows="3" autofocus placeholder="Why are you challenging this turf?" class="leavetip"></textarea>
             <div class="content-padded">
               <input type="file" accept="image/*" name="pic" class="btn btn-block btn-imageupload" />
-              <a href="mytips.html" class="btn btn-block btn-primary" data-transition="slide-in">Rate this turf</a>
-              <a href="index.html#tip" class="btn btn-block btn-link" data-transition="slide-out">Cancel</a>
             </div>
           </form>
+          <ul class="table-view">
+            <li class="table-view-cell">
+              Share on Facebook
+              <div class="toggle">
+                <div class="toggle-handle"></div>
+              </div>
+            </li>
+            <li class="table-view-cell">
+              Share on Twitter
+              <div class="toggle active">
+                <div class="toggle-handle"></div>
+              </div>
+            </li>
+          </ul>
+          <div class="content-padded">
+            <a href="turf.html" class="btn btn-block btn-primary" data-transition="slide-in">Challenge this turf</a>
+            <a href="index.html#challenge" class="btn btn-block btn-link" data-transition="slide-out">Cancel</a>
+          </div>
         <!-- End .content -->
         </div>
 

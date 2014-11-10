@@ -188,7 +188,7 @@
             <span class="icon icon-search"></span>
             <span class="tab-label">Turf Surch</span>
           </a>
-          <a class="tab-item" href="challenge.html">
+          <a class="tab-item" href="#challenge">
             <span class="icon icon-download"></span>
             <span class="tab-label">Challenge</span>
           </a>
@@ -226,7 +226,7 @@
         <div id="tip" class="modal">
           <header class="bar bar-nav">
             <a class="icon icon-close pull-right" href="#tip"></a>
-            <h1 class="title">Rate Places</h1>
+            <h1 class="title">Rate the turf you've challenged</h1>
           </header>
 
           <div class="content">
@@ -328,6 +328,50 @@
                 </a>
               </li>
             </ul>
+          </div>
+        </div>
+
+        <!-- Challenge Modal -->
+        <div id="challenge" class="modal">
+          <header class="bar bar-nav">
+            <a class="icon icon-close pull-right" href="#challenge"></a>
+            <h1 class="title">Challenge Turf</h1>
+          </header>
+
+          <div class="content">
+            <ul class="table-view">
+              <li class="table-view-cell table-view-form">
+                <form>
+                  <input class="text-center" type="search" placeholder="Search for a location">
+                </form>
+              </li>
+              <li class="table-view-cell table-view-slide media">
+                <a class="navigate-right" href="challenge.html#challenge" data-transition="slide-in">
+                  <img class="media-object pull-left" src="http://placepuppy.it/42/42">
+                  <div class="media-body">
+                    <label class="venue">Friendly's Sports Bar &amp; Grill</label>
+                    <p>
+                      <span class="address">30ft</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="table-view-cell table-view-slide media">
+                <a class="navigate-right" href="challenge.html#challenge" data-transition="slide-in">
+                  <img class="media-object pull-left" src="http://placepuppy.it/42/42">
+                  <div class="media-body">
+                    <label class="venue">Friendly's Sports Bar &amp; Grill</label>
+                    <p>
+                      <span class="address">5007 Lindenwood Ave (Hereford)<br />100ft</span>
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="content-padded">
+              <p class="text-center">Can't find the turf you're on?</p>
+              <a href="add-turf.html#challenge" class="btn btn-block btn-primary" data-transition="slide-in">Add some turf</a>
+            </div>
           </div>
         </div>
 

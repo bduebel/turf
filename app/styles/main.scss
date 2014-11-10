@@ -13,7 +13,7 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
 }
 
@@ -142,6 +142,7 @@ header {
     border-radius: 4px;
     color: #ddd;
     padding: 25% 0;
+    margin-bottom: 21px;
   }
 }
 .masthead {
@@ -165,6 +166,7 @@ header {
     width: 100%;
   }
   h1 {
+    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 700;
     bottom: 21px;
   }
