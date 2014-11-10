@@ -28,31 +28,39 @@
 
         <!-- Make sure all your bars are the first things in your <body> -->
         <header class="bar bar-nav">
-          <a href="index.html" class="icon icon-left-nav pull-left" data-transition="slide-out"></a>
-          <a href="leavetip-2.html" class="icon icon-compose pull-right" data-transition="slide-in"></a>
+          <a href="turf.html" class="icon icon-left-nav pull-left" data-transition="slide-out"></a>
+          <a href="turf.html" class="btn btn-link pull-right" data-transition="slide-out">Post</a>
+          <h1 class="title">Friendly's Sports Bar &amp; Grill</h1>
         </header>
 
         <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
         <div class="content">
-          <div class="masthead">
-            <h1 class="title text-center">Friendly's Sports Bar &amp; Grill</h1>
-            <p class="text-center">
-              <span class="turf-types">Billiards, Darts, Foosball</span> &middot;
-              <span class="turf-category">Sports Bar</span> &middot;
-              <span class="turf-price">$$</span>
-            </p>
-            <img src="http://placepuppy.it/320/320" />
-          </div>
-          <p class="text-center">
-            <span class="badge badge-positive turf-rating">8.3</span>
-          </p>
-          <div class="content-padded">
-            <div class="segmented-control">
-              <a href="mysavedplaces.html" class="control-item" data-transition="slide-in">Save</a>
-              <a href="challenge.html" class="control-item" data-transition="slide-in">Challenge</a>
-              <a href="leavetip-2.html" class="control-item" data-transition="slide-in">Rate</a>
+          <form class="input-group">
+            <textarea rows="3" autofocus placeholder="What's good here?" class="leavetip"></textarea>
+            <div class="content-padded">
+              <p class="input-helper">People talk about 7ft tables, soft-tip, beer</p>
             </div>
-          </div>
+            <ul class="table-view">
+              <li class="table-view-cell">
+                <a href="rating-pool.html" class="navigate-right" data-transition="slide-in">
+                  Rate the billiards here
+                </a>
+              </li>
+              <li class="table-view-cell">
+                <a href="rating-darts.html" class="navigate-right" data-transition="slide-in" data-transition="slide-in">
+                  Rate the darts here
+                </a>
+              </li>
+              <li class="table-view-cell">
+                <a href="rating-foos.html" class="navigate-right" data-transition="slide-in">
+                  Rate the foosball here
+                </a>
+              </li>
+            </ul>
+            <div class="content-padded">
+              <input type="file" accept="image/*" name="pic" class="btn btn-block btn-imageupload" />
+            </div>
+          </form>
         <!-- End .content -->
         </div>
 
