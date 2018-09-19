@@ -1,0 +1,32 @@
+{
+  "name": "admin_end_to_end_testing",
+  "version": "1.0.0",
+  "description": "Admin React End to End testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio wdio.conf.js"
+  },
+  "keywords": [
+    "Admin",
+    "Webdriverio",
+    "axe"
+  ],
+  "author": "Suraj Khakurel",
+  "license": "ISC",
+  "dependencies": {
+    "axe-core": "^2.1.7",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015-node6": "^0.4.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "wdio-mocha-framework": "^0.5.9",
+    "wdio-selenium-standalone-service": "0.0.8",
+    "wdio-spec-reporter": "^0.1.0",
+    "webdriverio": "^4.6.2"
+  },
+  "devDependencies": {
+    "wdio-visual-regression-service": "^0.7.0"
+  }
+}
